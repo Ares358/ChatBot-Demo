@@ -1,0 +1,45 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - capability
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_help:
+  - text: "I am a Chat bot made specifically for this project. I can help you around if you want. Do you want a guide on how to get started?"
+
+  utter_guide:
+  - text: "Go to the dashboard from the top navigation bar. Then sign up if you haven't already or log in if you already have an account. You can now upload your files here! Do you need any further assistance?"
+ 
+  utter_upgrade:
+  - text: "Click the change plan button-> Select and pay for the plan of your choice-> Save Changes!"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
